@@ -4,11 +4,10 @@
     <p class="section-subtitle">新規登録</p>
   </header>
   <div class="section-form">
-    <form class="form-simple" name="formContact" method="post">
-    <%=form_with(model:@cook, local: true) do |f|%>
+    <%=form_with model:@cook, class: "form-simple", local: true do |f|%>
       <p class="form-label">料理名</p>
       <p class="form-input">
-      <%=f.text_area :title%>
+      <%=f.text_field :title%>
       </p>
       <p class="form-label">説明</p>
       <p class="form-input">
