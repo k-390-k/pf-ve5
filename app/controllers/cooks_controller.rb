@@ -6,6 +6,7 @@ class CooksController < ApplicationController
   end
 
   def new
+    @cook = Cook.new
   end
 
   def edit
