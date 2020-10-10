@@ -5,25 +5,18 @@
   </header>
   <div class="section-form">
     <form class="form-simple" name="formContact" method="post">
-      <p class="form-label">お名前</p>
+    <%=form_with(model:@cook, local: true) do |f|%>
+      <p class="form-label">料理名</p>
       <p class="form-input">
-       
+      <%=f.text_area :title%>
       </p>
-      <p class="form-label">メールアドレス</p>
+      <p class="form-label">説明</p>
       <p class="form-input">
-        
-      </p>
-      <p class="form-label">パスワード</p>
-      <p class="form-input">
-        
-      </p>
-      <p class="form-label">確認のためもう一度</p>
-      <p class="form-input">
-        
+      <%=f.text_area :description%>
       </p>
       <p class="form-btn-holder">
-        
+       <%=f.button '投稿する', class: 'btn'%>
       </p>
-    </form>
+    <%end%>
   </div>
 </section>
