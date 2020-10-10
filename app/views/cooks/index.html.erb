@@ -1,0 +1,21 @@
+<section class="l-content-fixed section">
+  <header class="section-header">
+    <h2 class="section-title">New Arrivals</h2>
+    <p class="section-subtitle">新着記事</p>
+  </header>
+  <div class="l-multicolumn l-3column">
+    <section class="l-column">
+      <% @cooks.each do |cook|%>
+      <header>
+        <%= image_tag "logo.png", class: 'section-item-symbol'%>
+        <h3 class="section-item-title">
+          <%= cook.title%>
+        </h3>
+      </header>
+      <p class="section-item-description">
+        <%= link_to cook.description, cook_path(cook) %>
+      </p>
+      <%end%>
+    </section>
+  </div>
+</section>

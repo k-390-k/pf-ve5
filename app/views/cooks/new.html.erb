@@ -1,0 +1,21 @@
+<section class="l-content-fixed section">
+  <header class="section-header">
+    <h2 class="section-title">SignUp</h2>
+    <p class="section-subtitle">新規登録</p>
+  </header>
+  <div class="section-form">
+    <%=form_with model:@cook, class: "form-simple", local: true do |f|%>
+      <p class="form-label">料理名</p>
+      <p class="form-input">
+      <%=f.text_field :title%>
+      </p>
+      <p class="form-label">説明</p>
+      <p class="form-input">
+      <%=f.text_area :description%>
+      </p>
+      <p class="form-btn-holder">
+       <%=f.button '投稿する', class: 'btn'%>
+      </p>
+    <%end%>
+  </div>
+</section>

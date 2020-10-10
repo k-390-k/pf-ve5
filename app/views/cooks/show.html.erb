@@ -1,0 +1,32 @@
+<section class="l-content-fixed section">
+  <main class="l-main">
+    <atricle class="article">
+      <header class="article-header">
+        <time class="article-title-time">2020.10.09</time>      
+        <h1 class="article-title"><%= @cook.title%></h1>
+        <p class="article-title-type">EVENT</p>
+      </header>
+      <%= image_tag "logo.png", class: 'article-img' %>
+      <section>
+        <h2>作り方の説明</h2>
+        <p><%= @cook.description%></p>
+        <section>
+          <h3>実際にあった効果は？</h3>
+          <p>
+            社内勉強会は初めての試みでしたが、参加した社員からは以下のようなフィードバックをいただきました。
+          </p>
+        </section>
+      </section>
+      
+      <footer class="article-footer">
+        <%= image_tag "logo.png", class: 'article-footer-img'%>
+        <div class="article-footer-info">
+          <p class="article-footer-title">この記事を書いた人</p>
+          <p class="article-footer-name">Sugitani</p>
+          <p>東京生まれの三年目デザイナー。自社サービスのUIデザインを担当。週末は猫カフェに生息しています。</p>
+        </div>
+        
+      </footer>
+    </atricle>
+  </main>
+</section>
