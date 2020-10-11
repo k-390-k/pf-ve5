@@ -24,6 +24,6 @@ class CooksController < ApplicationController
 
   private
   def cook_params
-    params.require(:cook).permit(:title,:description)
+    params.require(:cook).permit(:title,:description,:picture)
   end
 end

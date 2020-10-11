@@ -6,7 +6,7 @@
         <h1 class="article-title"><%= @cook.title%></h1>
         <p class="article-title-type">EVENT</p>
       </header>
-      <%= image_tag "logo.png", class: 'article-img' %>
+      <%= image_tag @cook.picture.url, class: 'article-img' %>
       <section>
         <h2>作り方の説明</h2>
         <p><%= @cook.description%></p>
